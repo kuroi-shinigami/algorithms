@@ -20,6 +20,3 @@ class TestSolution(TestCase):
 
     def test_3(self):
         self.assertEqual(s.findLUSlength("", ""), -1)
-
-    # def test_(self):
-    #     self.assertEqual(s.findLUSlength(), )

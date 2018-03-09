@@ -22,6 +22,3 @@ class TestSolution(TestCase):
 
     def test_4(self):
         self.assertEqual(s.wordPattern("jquery", "jquery"), False)
-
-    # def test_(self):
-    #     self.assertEqual(s.wordPattern(), )

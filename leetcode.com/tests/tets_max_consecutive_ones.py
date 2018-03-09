@@ -11,6 +11,3 @@ class TestSolution(TestCase):
 
     def test_0(self):
         self.assertEqual(s.findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]), 3)
-
-    # def test_(self):
-    #     self.assertEqual(s.findMaxConsecutiveOnes()

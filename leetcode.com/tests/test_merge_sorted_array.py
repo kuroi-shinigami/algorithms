@@ -13,6 +13,3 @@ class TestSolution(TestCase):
 
     def test_1(self):
         self.assertEqual(s.merge([1], 1, [], 0), [1])
-
-    # def test_(self):
-    #     self.assertEqual(s.merge([], , [], ), [])

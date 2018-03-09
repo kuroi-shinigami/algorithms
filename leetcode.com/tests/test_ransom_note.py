@@ -16,6 +16,3 @@ class TestSolution(TestCase):
 
     def test_2(self):
         self.assertEqual(s.canConstruct("aa", "aab"), True)
-
-    # def test_(self):
-    #     self.assertEqual(s.canConstruct(), )

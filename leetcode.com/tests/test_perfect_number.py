@@ -17,7 +17,3 @@ class TestSolution(TestCase):
 
     def test_2(self):
         self.assertEqual(s.checkPerfectNumber(99999991), False)
-
-
-    # def test_(self):
-    #     self.assertEqual(s.checkPerfectNumber(), )
