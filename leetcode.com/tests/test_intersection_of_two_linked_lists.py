@@ -19,7 +19,7 @@ def list_to_nodes(some_list):
     some_list.reverse()
     tail = ListNode(some_list.pop(0))
     tail.next = None
-    head = None
+    head = tail  # BUG: head = None causes empty list instead 1-noded
     while some_list:
         head = ListNode(some_list.pop(0))
         head.next = tail
@@ -35,8 +35,17 @@ def list_to_nodes(some_list):
 class TestSolution(TestCase):
     """"""
 
-    def test_None(self):
-        list_to_nodes([1, 2, 3])
+    def test_None_0(self):
+        l = list_to_nodes([1, 2, 3])
+        self.assertEqual(l.val, 1)
+        self.assertNotEqual(l.next, None)
+        self.assertEqual(l.next.val, 2)
+        self.assertNotEqual(l.next.next, None)
+
+    def test_None_1(self):
+        l = list_to_nodes([1])
+        self.assertEqual(l.val, 1)
+        self.assertEqual(l.next, None)
 
     def test_0(self):
         res = ListNode(6)

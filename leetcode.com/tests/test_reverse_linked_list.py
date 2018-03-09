@@ -19,7 +19,7 @@ def list_to_nodes(some_list):
     some_list.reverse()
     tail = ListNode(some_list.pop(0))
     tail.next = None
-    head = None
+    head = tail  # BUG: head = None causes empty list instead 1-noded
     while some_list:
         head = ListNode(some_list.pop(0))
         head.next = tail
